@@ -1,6 +1,6 @@
 import busca_binaria
 if __name__ == "__main__":
-    lista = [x for x in range(2,5000)]
+    lista = [x for x in range(2,100)]
     for i in lista:
         print()
         print(busca_binaria.BuscaBinaria.makeSearch(lista, i))

@@ -1,0 +1,17 @@
+Forneça o tempo de execução para cada um dos casos a seguir em termos da notação big O.
+
+1. Você tem um nome e deseja encontrar o número de telefone para este nome em uma agenda telefônica.
+    
+    Resposta: A notação será a O(log n)
+
+2. Voce tem um numero de telefone e deseja encontrar o dono dele em uma agenda telefonica. (Dica: deve procurar pela agenda inteira). 
+
+    Resposta: O(n)
+
+3. Voce quer ler o numero de cada pessoa da agenda telefonica.
+  
+    Resposta: O (n)
+
+4. Voce quer ler os numeros apenas dos nomes que comecam com A. 
+  
+    Resposta: O(n). 
