@@ -1,11 +1,11 @@
 # Entendendo-algoritimos
-Repositório criado para os códigos usados nos exercícios do livro Entendendo Algoritmos.
+Repositório criado para os aprendizados obtidos do livro Entendendo Algoritmos.
 
 ## Busca binária
 
 O primeiro ensinamento do livro Entendo os algorítmos é a respeito da Busca Binária. Ela consiste em procurar um valor em uma lista ordenada consumindo menos tempo e realizando menos passos. 
 
-##### Exemplo: Temos uma lista com 10 números ordenados de forma crescente, se formos buscar o valor 1 realizaremos apenas um passo mas se quisermos o valor 10 executaremos 10 passos e se a lista for de 1000 termos e quisermos o milésimo termo, executaremos 1000 passos e assim a complexidade e o tempo de resposta cresce linearmente. Porém, temos uma forma de executar menos passos e deixar o problema mais eficiente e menos complexo, esse é o algoritmo da busca binária que foi escrito nesse exercício.
+Exemplo: Temos uma lista com 10 números ordenados de forma crescente, se formos buscar o valor 1 realizaremos apenas um passo mas se quisermos o valor 10 executaremos 10 passos e se a lista for de 1000 termos e quisermos o milésimo termo, executaremos 1000 passos e assim a complexidade e o tempo de resposta cresce linearmente. Porém, temos uma forma de executar menos passos e deixar o problema mais eficiente e menos complexo, esse é o algoritmo da busca binária que foi escrito nesse exercício.
 
 A busca binária é feita pegando o valor do meio da lista e comparando com o valor desejado, se o valor desejado for maior que o encontrado então a dividiremos novamente pela metade do valor posterior caso o valor desejado seja maior e o anterior caso seja menor até que encontre o valor desejado. 
 
@@ -13,7 +13,7 @@ A busca binária é feita pegando o valor do meio da lista e comparando com o va
 
 A complexidade de um algoritmo é denotada pelo tempo de execução do mesmo. A notação que informa se ele é rápido ou não é a notação Big O, ele mede o tempo de execução de um algoritmo pois eles crescem a taxas diferentes. 
 
-##### Exemplo: Se possuímos uma lista com 10 números ordenados de forma crescente, se formos buscar o valor 1 realizaremos apenas um passo mas se quisermos o valor 10 executaremos 10 passos e se a lista for de 1000 termos e quisermos o milésimo termo, executaremos 1000 passos e assim a complexidade e o tempo de resposta cresce linearmente, portanto, temos a notação O(n), se usarmos então busca binária para essa busca então temos os passos caindo de forma logaritma. No caso dos 1000 termos temos por volta de 9.96 ms, a notação é a O(log n). 
+Exemplo: Se possuímos uma lista com 10 números ordenados de forma crescente, se formos buscar o valor 1 realizaremos apenas um passo mas se quisermos o valor 10 executaremos 10 passos e se a lista for de 1000 termos e quisermos o milésimo termo, executaremos 1000 passos e assim a complexidade e o tempo de resposta cresce linearmente, portanto, temos a notação O(n), se usarmos então busca binária para essa busca então temos os passos caindo de forma logaritma. No caso dos 1000 termos temos por volta de 9.96 ms, a notação é a O(log n). 
 
 Outras notações do mais rápido para o mais lento são: 
 
@@ -40,3 +40,9 @@ Dessa forma, um array é uma estrutura de dados eficiente para operações de bu
 Por outro lado, as listas são muito eficientes para inserções e remoções, pois não é necessário alocar um novo espaço de memória ou mover os objetos. Em vez disso, basta atualizar os ponteiros dos objetos vizinhos. Isso resulta em uma complexidade menor para essas operações, o que as torna mais eficientes do que os arrays para situações em que os objetos precisam ser adicionados ou removidos continuamente.
 
 Portanto, embora as listas não sejam eficientes para operações de busca, elas são uma ótima escolha quando a adição ou remoção de objetos é uma prioridade.
+
+## Recursividade 
+
+A recursão é quando uma função chama a si mesma. É útil para resolver problemas complexos, dividindo-os em casos menores e mais simples. Cada chamada recursiva resolve um caso menor até atingir uma condição de parada, chamada caso base. A recursão é amplamente usada para explorar estruturas de dados hierárquicas. No entanto, é preciso ter cuidado para evitar problemas de desempenho e consumo excessivo de memória ao usar recursão.
+
+O exemplo que foi dado pelo livro foi, imagine várias caixas empilhadas e você precisa encontrar uma chave que está dentro delas. Em vez de usar um loop para abrir uma caixa de cada vez, você pode usar a recursão. Defina uma função chamada "procurarChave" que recebe uma caixa como entrada. Verifique se a caixa atual contém a chave. Se sim, retorne "Chave encontrada!". Caso contrário, escolha uma nova caixa dentro da caixa atual e chame a função "procurarChave" novamente com essa nova caixa. Repita esse processo até encontrar a chave ou até não haver mais caixas para abrir. Se não houver mais caixas, retorne "Chave não encontrada!". A recursão lida com as caixas de forma simples e natural, evitando a necessidade de loops complexos. Cada chamada recursiva lida com uma caixa individualmente até que a chave seja encontrada ou todas as caixas sejam verificadas.
